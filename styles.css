@@ -1,3 +1,57 @@
+body{
+    margin: 0 !important;
+    width: 100%;
+}
+
 .unfilled{
-    color: #87c9a3 !important;
+    color: #82ab68 !important;
+}
+
+.Header{
+    color:white; 
+    text-align: center; 
+    width: 100%; 
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 
+
+    inset 0px -11px 8px -10px #000; 
+}
+
+.Header h1{
+    font-size: 3em;
+}
+
+.TextBox{
+    float: left;
+    color:white;
+    text-align: left; 
+    width: calc(80% - 4em); 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:0;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.TextBox h4{
+    margin-bottom: 1em;    
+}
+
+.Footer{
+    float: left;
+    color:white;
+    text-align: center;
+    padding-top: 2em;
+    width: 100%; 
+    margin-top: 2em;
+    height: 6em;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 
+    inset 0px 11px 8px -10px #000;
 }

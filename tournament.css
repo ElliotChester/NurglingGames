@@ -1,19 +1,45 @@
 .wrapper {
   display: flex;
-  height: 600px;
+  height: fit-content;
   justify-content: center;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  -moz-box-shadow:    
+        inset 0px 11px 8px -10px #000,
+        inset 0px -11px 8px -10px #000; 
+  -webkit-box-shadow: 
+        inset 0px 11px 8px -10px #000,
+        inset 0px -11px 8px -10px #000; 
+  box-shadow: 
+        inset 0px 11px 8px -10px #000,
+        inset 0px -11px 8px -10px #000; 
+
 }
 
 .item {
   display: flex;
   flex-direction: row-reverse;
 }
-.item p {
-  padding: 20px;
+.item .tile{
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
   margin: 0;
-  background-color: #87c9a3;
+  background-color: #82ab68;
   color: #1f151a;
   border-radius: 0.2em;
+  width: 10em;
+}
+.item .tile .name{
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: 500;
+}
+.item .tile p{
+  margin: 0;
 }
 .item-parent {
   position: relative;
@@ -28,7 +54,7 @@
   height: 2px;
   left: 0;
   top: 50%;
-  background-color: #fff;
+  background-color: #569c3a;
   transform: translateX(-100%);
 }
 .item-childrens {
@@ -47,7 +73,7 @@
 .item-child:before {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: #569c3a;
   right: 0;
   top: 50%;
   transform: translateX(100%);
@@ -57,7 +83,7 @@
 .item-child:after {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: #569c3a;
   right: -25px;
   height: calc(50% + 22px);
   width: 2px;
