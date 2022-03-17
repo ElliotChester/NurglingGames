@@ -1,26 +1,78 @@
-<title>The Nurgling Games</title>
+<link rel="stylesheet" type="text/css" href="tournament.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
-<meta property="og:title" content="The Nurgling Games"/>
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://nurgling.games"/>
-<meta property="og:description" content="The Nurgling Games will take place during the next Ulthuan"/>
-<meta property="og:image" content="http://nurgling.games/Images/Nurgle.png"/>
-<meta name="theme-color" content="#445435"/>
 
 <link rel="shortcut icon" href="Images/favicon.ico" type="image/favicon">
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-
-<body style="background-color: #445435; font-family: Arial, Helvetica, sans-serif; height: 95%;">
+<body style="background-color: #445435; font-family: Arial, Helvetica, sans-serif;">
 
 
-    <div style="color:white; text-align: center; width: 90%; height: 70px; position: absolute; top: 40%;">
+    <div class="Header">
         <h1>The Nurgling Games!</h1>
-        <h2>The Nurgling Games will take place during the next Ulthuan</h2>
     </div>
 
+    <div class="TextBox">
+        <h4>What are The Nurgling Games?</h4>
+        <p>During the Chaos and Conquest Ulthuan event, The Nurgling Games will take place,
+            a tournament that will have players battle with their nurglings to find the one true nurgling king.</p>
+    </div>
 
-    <footer style="bottom: 1em; position: absolute; margin: auto; width: 95%;">
-        <p style="font-size: 12px; text-align: center;">Created by Fuit Gummy</p>
-    </footer>
+    <div class="countdownwrapper">
+        <div id="countdowntitle">The Nurgling games start in:</div>
+        <div id="countdown"><img src="Images\thoon.jpg" alt="" style="height: 1em; width: auto;"></div>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("mar 26, 2022 7:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date();
+                var nowUTC = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - nowUTC;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
+
+    <br>
+
+    <div class="TextBox">
+        <h4>What do I need to take part</h4>
+        <ul>
+            <li>Be able to invade Ulthuan (k20, invade pass or whatever)</li>
+            <li>Be willing to unshield for your fights</li>
+            <li>69 nurglings</li>
+        </ul>
+    </div>
+
+    <div class="TextBox">
+        <h4>How do I sign up</h4>
+        <p>-If you're in the chaos and conquest discord, message Fuit Gummy</p>
+        <p>-If you're not, join, then message Fuit Gummy <a style="color:#beec95;" href="https://discord.gg/chaosconquest">https://discord.gg/chaosconquest</a></p>
+    </div>
+
+    <div class="footer">
+        <p>Created by Fuit Gummy</p>
+    </div>
 </body>
