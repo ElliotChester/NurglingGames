@@ -13,11 +13,7 @@ body{
     width: 100%; 
     padding-bottom: 2em;
     padding-top: 2em;
-    margin-bottom: 2em;
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 
-
-    inset 0px -11px 8px -10px #000; 
+    margin-bottom: 0em;
 }
 
 .Header h1{
@@ -60,13 +56,13 @@ body{
 
 .countdownwrapper{
   height: 10em;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 20em;
+  padding-bottom: 20em;
   justify-content: center;
   float: left;
   background-color: rgba(0, 0, 0, 0.2);
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
   width: 100%;
   -moz-box-shadow:    
         inset 0px 11px 8px -10px #000,
